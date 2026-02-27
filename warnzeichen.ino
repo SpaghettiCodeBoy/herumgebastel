@@ -32,7 +32,7 @@ void drawSectors(int16_t x, int16_t y, int16_t r, float offset) {
        
       tft.fillTriangle(x, y,  
                        x + cos(rad1) * r, y + sin(rad1) * r,  
-                       x + cos(rad2) * r, cy + sin(rad2) * r, // Anmerkung Max: cy korrigiert zu y 
+                       x + cos(rad2) * r, cy + sin(rad2) * r,
                        COLOR_BLACK); 
     } 
   } 
@@ -76,6 +76,5 @@ void loop() {
 Anmerkung Max: 
 * drawSectors/drawRadioactive um "offset" erweitert, damit der Winkel variabel ist.
 * In setup/loop die feste Abfolge durch zwei for-Schleifen ersetzt.
-* Schrittweite in der Rotation auf 15 Grad gesetzt für flüssiges Zeichnen.
-* Kleinen Tippfehler im originalen fillTriangle (cy statt y) korrigiert.
+* Schrittweite in der Rotation auf 15 Grad gesetzt für flüssiges Zeichnen (musst du ausprobieren was da gut aussieht)
 */
